@@ -1,6 +1,7 @@
 # Astro Portfolio Proyect
 ## By Mario Rodriguez
 
+```
 /
 ├── public/
 │   └── favicon.svg
