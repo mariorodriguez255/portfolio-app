@@ -1,5 +1,4 @@
-# Astro Portfolio Proyect
-## By Mario Rodriguez
+# Astro Portfolio Proyect By Mario Rodriguez
 
 ```
 /
