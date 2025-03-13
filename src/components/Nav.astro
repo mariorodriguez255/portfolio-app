@@ -1,10 +1,31 @@
 ---
-import './src/styles/global.css';
+import "./src/styles/global.css";
 ---
 
-<nav class="h-10 w-5/6 bg-[#FFB4A2] mx-auto text-center flex justify-between">
-    <a href="#">Home</a>
-    <a href="#">Studies</a>
-    <a href="#">Proyects</a>
-    <a href="#">Contact Me</a>
+<nav class="h-15 mt-10 max-w-3/4 bg-[#393E46] bg-opacity-50 backdrop-blur-lg mx-auto flex items-center rounded-xl px-5 sm:w-full relative border border-[#ffffff33]">
+  <div class="flex items-center">
+    <a href="#">
+      <img src="/src/assets/icons8-m-100.png" alt="Logo de la empresa" class="w-8 h-8" />
+    </a>
+  </div>
+
+  <div class="absolute left-1/2 transform -translate-x-1/2  items-center space-x-6 hidden lg:block">
+    <a href="#" class="text-[#EEEEEE] hover:text-white transition-colors">Home</a>
+    <a href="#" class="text-[#EEEEEE] hover:text-white transition-colors">Studies</a>
+    <a href="#" class="text-[#EEEEEE] hover:text-white transition-colors">Projects</a>
+    <a href="#" class="text-[#EEEEEE] hover:text-white transition-colors">Contact Me</a>
+  </div>
+
+  <div class="flex items-center ml-auto">
+    <a href="#" class="text-white px-3 py-1 rounded-xl transition-colors hidden lg:block">
+      <img src="/src/assets/icons8-github-60.png" class="w-8 h-8" alt="">
+    </a>
+    <a href="#" class="text-white px-3 py-1 rounded-xl transition-colors hidden lg:block">
+      <img src="/src/assets/icons8-linkedin-60.png" class="w-8 h-8" alt="">
+    </a>
+    <button class="block lg:hidden">
+      <img src="/src/assets/menu.png" alt="Menú" class="w-10 h-10" />
+    </button>
+  </div>
 </nav>
+
