@@ -1,8 +1,9 @@
 ---
 import "../styles/global.css";
+import 'animate.css';
 ---
 
-<nav class="h-15 mt-10 max-sm:mt-5 max-w-3/4 max-sm:max-w-11/12 bg-[#393E46] bg-opacity-50 backdrop-blur-lg mx-auto flex items-center rounded-xl px-5 sm:w-full relative border border-[#ffffff33]">
+<nav class="h-15 mt-10 max-sm:mt-5 max-w-3/4 max-sm:max-w-11/12 bg-[#393E46] bg-opacity-50 backdrop-blur-lg mx-auto flex items-center rounded-xl px-5 sm:w-full relative border border-[#ffffff33] animate__animated animate__fadeInDown">
   <div class="flex items-center">
     <a href="#">
       <img src="/src/assets/icons8-m-100.png" alt="Logo de la empresa" class="w-8 h-8" />
@@ -12,28 +13,28 @@ import "../styles/global.css";
   <div class="absolute left-1/2 transform -translate-x-1/2 items-center space-x-6 hidden lg:block">
     <a href="/" class="nav-link text-[#EEEEEE] relative px-3 py-1 rounded group">
         <span class="relative z-10">Home</span>
-        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left rounded-md"></span>
+        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left rounded"></span>
     </a>
     <a href="/studies" class="nav-link text-[#EEEEEE] relative px-3 py-1 rounded group">
         <span class="relative z-10">Studies</span>
-        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left rounded-md"></span>
+        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left rounded"></span>
     </a>
     <a href="/proyects" class="nav-link text-[#EEEEEE] relative px-3 py-1 rounded group">
         <span class="relative z-10">Projects</span>
-        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left rounded-md"></span>
+        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left rounded"></span>
     </a>
     <a href="/contactme" class="nav-link text-[#EEEEEE] relative px-3 py-1 rounded group">
         <span class="relative z-10">Contact Me</span>
-        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left rounded-md"></span>
+        <span class="absolute inset-0 bg-[#00ADB5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left rounded"></span>
     </a>
 </div>
 
 
   <div class="flex items-center ml-auto">
-    <a href="#" class="px-3 py-1 rounded-xl hidden lg:block">
+    <a href="https://github.com/mariorodriguez255" target="_blank" class="px-3 py-1 rounded-xl hidden lg:block">
       <img src="/src/assets/icons8-github-60.png" class="w-8 h-8" alt="">
     </a>
-    <a href="#" class="px-3 py-1 rounded-xl hidden lg:block">
+    <a href="https://www.linkedin.com/in/marioro255/" target="_blank" class="px-3 py-1 rounded-xl hidden lg:block">
       <img src="/src/assets/icons8-linkedin-60.png" class="w-8 h-8" alt="">
     </a>
     <button class="block lg:hidden">
@@ -53,4 +54,3 @@ import "../styles/global.css";
     });
   });
 </script>
-
