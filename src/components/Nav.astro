@@ -3,7 +3,7 @@ import "../styles/global.css";
 import 'animate.css';
 ---
 
-<nav class="h-15 mt-10 max-sm:mt-5 max-w-3/4 max-sm:max-w-11/12 bg-[#393E46] bg-opacity-50 backdrop-blur-lg mx-auto flex items-center rounded-xl px-5 sm:w-full relative border border-[#ffffff33] animate__animated animate__fadeInDown">
+<nav id="nav" class="h-15 mt-10 max-sm:mt-5 max-w-3/4 max-sm:max-w-11/12 bg-[#393E46] bg-opacity-50 backdrop-blur-lg mx-auto flex items-center rounded-xl px-5 sm:w-full relative border border-[#ffffff33]">
   <div class="flex items-center">
     <a href="#">
       <img src="/src/assets/icons8-m-100.png" alt="Logo de la empresa" class="w-8 h-8" />
@@ -52,5 +52,14 @@ import 'animate.css';
         link.classList.add('bg-[#00ADB5]');
       }
     });
+
+    // Añadir la animación solo al cargar la página
+    const nav = document.getElementById('nav');
+    if (!sessionStorage.getItem('navAnimated')) {
+      if (nav) {
+        nav.classList.add('animate__animated', 'animate__fadeInDown');
+      }
+      sessionStorage.setItem('navAnimated', 'true');
+    }
   });
 </script>
